@@ -1,0 +1,92 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.whole{
+	height: 100vh;
+	width: 100%;
+	background-color: grey;
+}
+.logo{
+	width: 40%;
+	float: left;
+	height: 100px;
+}
+.logo img{
+	width: 250px;
+	height: 100px;
+}
+.nav{
+	float: right;
+	width: 60%;
+	height: 100px;
+}
+.nav ul{
+	list-style-type: none;
+	margin-top: 3%;
+	margin-right: 3%;
+	float: right;
+}
+.nav ul li{
+	display: inline-block;
+	font-size: 25px;
+}
+.nav ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 15px;
+	transition: 0.6s ease;
+}
+.nav ul li a:hover{
+	background-color: white;
+	color: black;
+}
+.digi h1{
+	position: absolute;
+	font-size: 80px;
+	top: 40%;
+	left: 50%;
+	color: white;
+	transform: translate(-50%, -50%);
+}
+.search-box{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-45%);
+	background-color: #2f3640;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+}
+.search-box:hover > .search-txt{
+	width: 240px;
+	padding: 0 6px;
+}
+.search-box:hover > .search-btn{
+	background: white;
+}
+.search-btn{
+	color: orange;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+}
+.search-txt{
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+}
