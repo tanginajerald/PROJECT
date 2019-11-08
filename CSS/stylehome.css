@@ -7,13 +7,14 @@ html, body {
 body {
       font-family: "Helvetica Neue",sans-serif;
       font-weight: lighter;
+      background: url(../IMAGES/back.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      background-attachment: fixed;
 }
 
 header {
       width: 100%;
       height: 100vh;
-      background: url(../IMAGES/back.jpg) no-repeat 50% 50%;
-      background-size: cover;
 }
 .logo {
       line-height: 60px;
@@ -27,12 +28,12 @@ header {
 }
 
 nav {	
-		position: absolute;
       position: fixed;
+      overflow: hidden;
       width: 100%;
       line-height: 60px;
+      z-index: 9999;
 }
-
 nav ul {
       line-height: 60px;
       list-style: none;
@@ -49,12 +50,10 @@ nav ul {
 nav.black ul {
       background: #000;
 }
-
 nav ul li {
       display: inline-block;
       padding: 16px 40px;;
 }
-
 nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -113,8 +112,6 @@ nav ul li a:hover{
       }
 
 }
-
-
 .digi h1{
 	position: absolute;
 	font-size: 80px;
@@ -164,4 +161,11 @@ nav ul li a:hover{
 	transition: 0.4s;
 	line-height: 40px;
 	width: 0px;
+}
+.content{
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+      margin-left: 50%;
+      transform: translateX(-50%);
 }
