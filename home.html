@@ -46,23 +46,64 @@ $('a[href*="#"]')
           };
         };
 </script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 </head>
 <body>
-	<div class="whole">
 		<header>
 			<nav>
                         <div class="menu-icon">
                               <i class="fa fa-bars fa-2x"></i>
                         </div>
                         <div class="logo">
-                              LOGO
+                              <img src="IMAGES/logo.jpg">
                         </div>
 
                         <div class="menu">
                               <ul>
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#mar">Blog</a></li>
-                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#adjust">Gallery</a></li>
                                     <li><a href="#">About us</a></li>
                               </ul>
                         </div>
@@ -155,14 +196,22 @@ $('a[href*="#"]')
 				</div>
 			</div>
       </div>
+      <div class="left"></div>
+      <div class="right"></div>
+      <div class="gallery">
+      	<div class="adjust" id="adjust">
+      	<h1><br><br>GALLERY</h1></div>
 
 
+      	<a href="IMAGES/redgirl.jpg"><img src="IMAGES/wesbite4.png"></a>
+      	<a href="IMAGES/cup_girl.jpg"><img src="IMAGES/website3.png"></a>
+      	<a href="IMAGES/redgirl.jpg"><img src="IMAGES/website2.png"></a>
+      	<a href="IMAGES/cup_girl.jpg"><img src="IMAGES/website1.png"></a>
+      	<a href="IMAGES/redgirl.jpg"><img src="IMAGES/website5.png"></a>
+      	<a href="IMAGES/cup_girl.jpg"><img src="IMAGES/website9.png"></a>
+      	<a href="IMAGES/redgirl.jpg"><img src="IMAGES/redgirl.jpg"></a>
+      	<a href="IMAGES/cup_girl.jpg"><img src="IMAGES/cup_girl.jpg"></a>
 
 
-
-
-
-
-	</div>
 </body>
 </html>
