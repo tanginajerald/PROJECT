@@ -17,15 +17,12 @@ header {
       width: 100%;
       height: 100vh;
 }
-.logo {
-      line-height: 60px;
-      position: fixed;
-      float: left;
-      margin: 16px 46px;
-      color: #fff;
-      font-weight: bold;
-      font-size: 20px;
-      letter-spacing: 2px;
+.logo img{
+      width: 120px;
+      height: 75px;
+      position: absolute;
+      margin: 1%;
+      border-radius: 20px;
 }
 
 nav {	
@@ -119,7 +116,6 @@ nav ul li a:hover{
 }
 .mar h1{
       text-align: center;
-      width: 100%;
       font-size: 40px;
       color: black;
 }
@@ -146,7 +142,7 @@ nav ul li a:hover{
       float: right;
       width: 86%;
       min-height: 100vh;
-      background-color: white;
+      background-color: #f1f1f1;
 }
 .card{
      width: 21.5%;
@@ -154,28 +150,28 @@ nav ul li a:hover{
      box-shadow: 2px 2px 20px black;
      border-radius: 5px; 
      margin-left: 2.5%;
-    }
-    .cardo{
+}
+.cardo{
      width: 21.5%;
      display: inline-block;
      box-shadow: 2px 2px 20px black;
      border-radius: 5px; 
      margin-left: 2.5%;
-    }
-    .cardoo{
+}
+.cardoo{
      width: 21.5%;
      display: inline-block;
      box-shadow: 2px 2px 20px black;
      border-radius: 5px; 
      margin-left: 2.5%;
-    }
-    .cardooo{
+}
+.cardooo{
      width: 21.5%;
      display: inline-block;
      box-shadow: 2px 2px 20px black;
      border-radius: 5px; 
      margin-left: 2.5%;
-    }
+}
 .image img{
   width: 100%;
   border-top-right-radius: 5px;
@@ -211,13 +207,11 @@ button:hover{
   transition: .5s;
   cursor: pointer;
 }
-
-
   a:link,
   a:visited{
    text-decoration: none;
   }
-  .modal{
+.modal{
    background-color: rgba(0,0,0, .8);
    width:100%;
    height: 100vh;
@@ -228,8 +222,8 @@ button:hover{
    opacity: 0;
    visibility: hidden;
    transition: all .5s;
-  }
-  .modal__content{
+}
+.modal__content{
    width: 75%;
    height: 65%;
    background-color: #fff;
@@ -242,31 +236,55 @@ button:hover{
    opacity: 0;
    visibility: hidden;
    transition: all .5s;
-  }
-  #modal:target{
+}
+#modal:target{
    opacity: 1;
    visibility: visible;
-  }
+}
   #modal:target .modal__content{
    opacity: 1;
    visibility: visible;
-  }
-  .modal__close{
+}
+.modal__close{
    color: #363636;
    font-size: 2em;
    position: absolute;
    top: .5em;
    right: 1em;
-  }
-  .modal__heading{
+}
+.modal__heading{
    color: dodgerblue;
    margin-bottom: 1em;
-  }
-  .modal__paragraph{
+}
+.modal__paragraph{
    line-height: 1.5em;
-  }
+}
 .modal-open{
  display: inline-block;
  color: dodgerblue;
  margin: 2em;
 }
+.gallery{
+      width: 86%;
+      min-height: 100vh;
+      float: left;
+      background-color: #f2f2f2;
+      margin: auto;
+}
+.adjust{
+      width: 100%;
+      height: 200px;
+      float: left;
+}
+.adjust h1{
+      text-align: center;
+      font-size: 40px;
+      color: black;
+}
+.gallery img{
+      margin-left: 2.5%;
+      width: 21.5%;
+      height: 10%;
+      margin-bottom: 2%;
+}
+
