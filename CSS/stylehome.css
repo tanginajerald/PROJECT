@@ -142,30 +142,9 @@ nav ul li a:hover{
       float: right;
       width: 86%;
       min-height: 100vh;
-      background-color: #839192;
+      background-color: #95652F;
 }
 .card{
-     width: 21.5%;
-     display: inline-block;
-     box-shadow: 2px 2px 20px black;
-     border-radius: 5px; 
-     margin-left: 2.5%;
-}
-.cardo{
-     width: 21.5%;
-     display: inline-block;
-     box-shadow: 2px 2px 20px black;
-     border-radius: 5px; 
-     margin-left: 2.5%;
-}
-.cardoo{
-     width: 21.5%;
-     display: inline-block;
-     box-shadow: 2px 2px 20px black;
-     border-radius: 5px; 
-     margin-left: 2.5%;
-}
-.cardooo{
      width: 21.5%;
      display: inline-block;
      box-shadow: 2px 2px 20px black;
@@ -193,6 +172,7 @@ nav ul li a:hover{
   border-bottom-left-radius: 5px;
   font-size: 12px;
 }
+
 button{
   margin-top: 0px;
   margin-bottom: 10px;
@@ -259,6 +239,13 @@ button:hover{
 .modal__paragraph{
    line-height: 1.5em;
 }
+.modal__content p{
+  font-size: 20px;
+}
+.modal__content h2{
+  font-size: 30px;
+}
+
 .modal-open{
  display: inline-block;
  color: dodgerblue;
@@ -268,7 +255,7 @@ button:hover{
       width: 86%;
       min-height: 100vh;
       float: left;
-      background-color: #839192;
+      background-color: #95652F;
       margin: auto;
 }
 .adjust{
@@ -366,4 +353,191 @@ button:hover{
 .p-sm a i{
   color: #333;
   line-height: 30px;
+}
+
+
+
+.modal1{
+   background-color: rgba(0,0,0, .8);
+   width:100%;
+   height: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .5s;
+  }
+  .modal__content1{
+   width: 75%;
+   height: 65%;
+   background-color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 2em;
+   border-radius: 1em;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .5s;
+  }
+  #modal1:target{
+   opacity: 1;
+   visibility: visible;
+  }
+  #modal1:target .modal__content1{
+   opacity: 1;
+   visibility: visible;
+  }
+  .modal__close1{
+   color: #363636;
+   font-size: 2em;
+   position: absolute;
+   top: .5em;
+   right: 1em;
+  }
+  .modal__heading1{
+   color: dodgerblue;
+   margin-bottom: 1em;
+  }
+  .modal__paragraph1{
+   line-height: 1.5em;
+  }
+.modal-open1{
+ display: inline-block;
+ color: dodgerblue;
+ margin: 2em;
+}
+.modal__content1 p{
+  font-size: 17px;
+}
+.modal__content1 h2{
+  font-size: 25px;
+}
+
+
+
+
+.modal2{
+   background-color: rgba(0,0,0, .8);
+   width:100%;
+   height: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .5s;
+  }
+  .modal__content2{
+   width: 75%;
+   height: 65%;
+   background-color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 2em;
+   border-radius: 1em;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .5s;
+  }
+  #modal2:target{
+   opacity: 1;
+   visibility: visible;
+  }
+  #modal2:target .modal__content2{
+   opacity: 1;
+   visibility: visible;
+  }
+  .modal__close2{
+   color: #363636;
+   font-size: 2em;
+   position: absolute;
+   top: .5em;
+   right: 1em;
+  }
+  .modal__heading2{
+   color: dodgerblue;
+   margin-bottom: 1em;
+  }
+  .modal__paragraph2{
+   line-height: 1.5em;
+  }
+.modal-open2{
+ display: inline-block;
+ color: dodgerblue;
+ margin: 2em;
+}
+.modal__content2 p{
+  font-size: 15px;
+}
+.modal__content2 h2{
+  font-size: 20px;
+}
+
+
+
+.modal3{
+   background-color: rgba(0,0,0, .8);
+   width:100%;
+   height: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .5s;
+  }
+  .modal__content3{
+   width: 75%;
+   height: 65%;
+   background-color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 2em;
+   border-radius: 1em;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .5s;
+  }
+  #modal3:target{
+   opacity: 1;
+   visibility: visible;
+  }
+  #modal3:target .modal__content3{
+   opacity: 1;
+   visibility: visible;
+  }
+  .modal__close3{
+   color: #363636;
+   font-size: 2em;
+   position: absolute;
+   top: .5em;
+   right: 1em;
+  }
+  .modal__heading3{
+   color: dodgerblue;
+   margin-bottom: 1em;
+  }
+  .modal__paragraph3{
+   line-height: 1.5em;
+  }
+.modal-open3{
+ display: inline-block;
+ color: dodgerblue;
+ margin: 2em;
+}
+.modal__content3 p{
+  font-size: 20px;
+}
+.modal__content3 h2{
+  font-size: 30px;
 }
